@@ -68,6 +68,7 @@ Vagrant.configure("2") do |config|
      apt-get update
      apt-get install -y quilt kpartx realpath qemu-user-static debootstrap zerofree pxz zip dosfstools git vim
      git clone https://github.com/alastairhm/pi-gen.git
+     echo "IMG_NAME='Raspbian'" > /home/vagrant/pi-gen/config
    SHELL
 
 end
